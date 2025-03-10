@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Side Navigation Bar -->
     <div class="sidebar">
         <h2>Gift Ajayi</h2>
         <ul>
@@ -18,36 +19,61 @@
         </ul>
     </div>
     
+    <!-- Main Content -->
     <div class="main-content">
+        <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a passionate data analyst with expertise in Power BI, SQL, and Python.</p>
+            <p>I am a passionate data analyst with expertise in transforming raw data into actionable insights. My skills include data cleaning, exploratory data analysis (EDA), dashboard creation, and advanced analytics using Python and SQL. I enjoy solving real-world problems through data-driven decision-making.</p>
         </section>
         
+        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="slideshow-container">
+                <!-- Slide 1: Canada Weather Dashboard -->
                 <div class="slide fade">
                     <img src="images/weather_dashboard.png" alt="Canada Weather Dashboard">
-                    <div class="caption">Canada Weather Dashboard</div>
+                    <div class="caption">
+                        <h3>Canada Weather Report</h3>
+                        <p>An interactive visualization of weather trends across Canada, including temperature, precipitation, and seasonal variations.</p>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjllOTEwNTMtM2U5My00YmVjLTgwYTktOWQ2YWNkNzQ4NTFmIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9" target="_blank">View Dashboard</a>
+                    </div>
                 </div>
+                <!-- Slide 2: Vancouver Crime Dashboard -->
                 <div class="slide fade">
                     <img src="images/vancouver_crime.png" alt="Vancouver Crime Dashboard">
-                    <div class="caption">Vancouver Crime Analysis</div>
+                    <div class="caption">
+                        <h3>Vancouver Crime and Population Dashboard</h3>
+                        <p>This dashboard explores crime trends in Vancouver alongside population data, highlighting correlations and patterns.</p>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiN2Q0MDlmZWEtN2E1ZS00Y2JiLTkwODctNTlhMjE2MmRiZGNkIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9" target="_blank">View Dashboard</a>
+                    </div>
                 </div>
+                <!-- Slide 3: Sales Report Dashboard -->
                 <div class="slide fade">
                     <img src="images/sales_dashboard.png" alt="Sales Report Dashboard">
-                    <div class="caption">Sales Report Dashboard</div>
+                    <div class="caption">
+                        <h3>Sales Report</h3>
+                        <p>A comprehensive sales dashboard that tracks revenue, profit, and sales performance across different regions and product categories.</p>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNzlmYTdhZWUtN2VjNS00ZjA1LWFiYmMtYjJiZTQzYzY5Mjc1IiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9" target="_blank">View Dashboard</a>
+                    </div>
                 </div>
             </div>
         </section>
         
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>Email: your-email@example.com</p>
+            <p>If you'd like to connect or discuss potential opportunities, feel free to reach out:</p>
+            <ul>
+                <li><strong>Email:</strong> your-email@example.com</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gift-ajayi-036329ba/" target="_blank">Gift Ajayi</a></li>
+                <li><strong>Medium:</strong> <a href="https://medium.com/@ajayigift.gg" target="_blank">Gift Ajayi on Medium</a></li>
+            </ul>
         </section>
     </div>
     
+    <!-- JavaScript for Slideshow -->
     <script>
         let slideIndex = 0;
         function showSlides() {
@@ -56,7 +82,7 @@
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000);
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
         }
         showSlides();
     </script>
