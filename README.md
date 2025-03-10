@@ -1,81 +1,68 @@
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+# <span style="color: #FF5733;">Data Analyst Portfolio</span>
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <div class="sidebar">
-        <h2>Portfolio</h2>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#powerbi">Power BI Dashboards</a></li>
-                <li><a href="#excel">Excel Projects</a></li>
-                <li><a href="#sql">SQL Projects</a></li>
-                <li><a href="#python">Python Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    <div class="content">
-        <section id="about">
-            <h1>About Me</h1>
-            <p>I am a passionate data analyst with expertise in transforming raw data into actionable insights. My skills include data cleaning, exploratory data analysis (EDA), dashboard creation, and advanced analytics using Python and SQL.</p>
-        </section>
+Welcome to my **Data Analyst Portfolio**! This website showcases my skills in data analysis, visualization, and storytelling using tools like Power BI, Excel, SQL, and Python. Below, you'll find a collection of my projects, each demonstrating my ability to clean, analyze, and present data effectively.
 
-        <section id="powerbi">
-            <h1>Power BI Dashboards</h1>
-            <div class="project">
-                <h2>Canada Weather Report</h2>
-                <p>This dashboard provides an interactive visualization of weather trends across Canada.</p>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiZjllOTEwNTMtM2U5My00YmVjLTgwYTktOWQ2YWNkNzQ4NTFmIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9" target="_blank">View Dashboard</a>
-            </div>
-        </section>
+---
 
-        <section id="excel">
-            <h1>Excel Projects</h1>
-            <div class="project">
-                <h2>Vancouver Crime Analysis</h2>
-                <p>Cleaning and analyzing Vancouver crime data to identify trends.</p>
-                <a href="https://1drv.ms/x/c/c34fb1dec43df6dc/Ef89l6rpG5dKvrZeLjSdq-kBp2kwuWUZlBSmbIn6Qud5Pg?e=SSxjpj" target="_blank">View Project</a>
-            </div>
-        </section>
+## **Menu**
+- **LinkedIn**: [Gift Ajayi](https://www.linkedin.com/in/gift-ajayi-036329ba/)
+- **Medium**: [Gift Ajayi on Medium](https://medium.com/@ajayigift.gg)
 
-        <section id="sql">
-            <h1>SQL Projects</h1>
-            <div class="project">
-                <h2>Conference Database</h2>
-                <p>A database project for managing conference data, including attendees and schedules.</p>
-                <a href="https://github.com/your-username/your-repo-name/blob/main/Conference_db(sql).ipynb" target="_blank">View Project</a>
-            </div>
-        </section>
+---
 
-        <section id="python">
-            <h1>Python Projects</h1>
-            <div class="project">
-                <h2>Data Cleaning and Analysis</h2>
-                <p>A Python project demonstrating data cleaning and analysis using Pandas.</p>
-                <a href="https://github.com/your-username/your-repo-name/blob/main/data_cleaning_analysis.ipynb" target="_blank">View Project</a>
-            </div>
-        </section>
+## **About Me**
+I am a passionate data analyst with expertise in transforming raw data into actionable insights. My skills include data cleaning, exploratory data analysis (EDA), dashboard creation, and advanced analytics using Python and SQL. I enjoy solving real-world problems through data-driven decision-making.
 
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>Feel free to reach out!</p>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/gift-ajayi-036329ba/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://medium.com/@ajayigift.gg" target="_blank">Medium</a></li>
-                <li>Email: your-email@example.com</li>
-            </ul>
-        </section>
-    </div>
-</body>
-</html>
+---
+
+## **Power BI Dashboards**
+
+| Project | Description | Link |
+|---------|------------|------|
+| **Canada Weather Report** | This dashboard provides an interactive visualization of weather trends across Canada, including temperature, precipitation, and seasonal variations. | [View Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZjllOTEwNTMtM2U5My00YmVjLTgwYTktOWQ2YWNkNzQ4NTFmIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9) |
+| **Vancouver Crime and Population Dashboard** | This dashboard explores crime trends in Vancouver alongside population data, highlighting correlations and patterns. | [View Dashboard](https://app.powerbi.com/view?r=eyJrIjoiN2Q0MDlmZWEtN2E1ZS00Y2JiLTkwODctNTlhMjE2MmRiZGNkIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9) |
+| **Sales Report** | A comprehensive sales dashboard that tracks revenue, profit, and sales performance across different regions and product categories. | [View Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNzlmYTdhZWUtN2VjNS00ZjA1LWFiYmMtYjJiZTQzYzY5Mjc1IiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9) |
+
+---
+
+## **Excel Projects**
+
+| Project | Description | Link |
+|---------|------------|------|
+| **Vancouver Crime Analysis** | Cleaning and analyzing Vancouver crime data to identify trends and hotspots. | [View Project](https://1drv.ms/x/c/c34fb1dec43df6dc/Ef89l6rpG5dKvrZeLjSdq-kBp2kwuWUZlBSmbIn6Qud5Pg?e=SSxjpj) |
+| **Sales Data Cleaning and Analysis** | Detailed analysis of sales data, including data cleaning, pivot tables, and visualization. | [View Project](https://1drv.ms/x/c/c34fb1dec43df6dc/EWDXnHNFH7tJs8qMc_XQeT0BzL8fs569EQ8n0AZYtGJQhw?e=w4B7eG) |
+| **Airline Customer Review Data Analysis** | Analysis of airline customer reviews to identify common complaints and areas for improvement. | [View Project](https://1drv.ms/x/c/c34fb1dec43df6dc/Ef3rVIPyzC9Ku2-CAkdVUEEB4s2q4PnYeuQ3E6E6lEH9Vg?e=Q0lGnM) |
+
+---
+
+## **SQL Projects**
+
+| Project | Description | Link |
+|---------|------------|------|
+| **Conference Database** | A database project for managing conference data, including attendees, sessions, and schedules. | [View Notebook](https://github.com/your-username/your-repo-name/blob/main/Conference_db(sql).ipynb) |
+| **Students SQL Query** | SQL queries to analyze student data, including grades, attendance, and performance. | [View SQL Query](https://github.com/your-username/your-repo-name/blob/main/Students_SQLQuery.sql) |
+| **Vancouver Crime Database** | A database project analyzing crime data in Vancouver using SQL. | [View Notebook](https://github.com/your-username/your-repo-name/blob/main/Vancouver_crime_db(sql).ipynb) |
+
+---
+
+## **Python Projects**
+
+| Project | Description | Link |
+|---------|------------|------|
+| **Data Cleaning and Analysis** | A Python project demonstrating data cleaning and analysis using Pandas and NumPy. | [View Notebook](https://github.com/your-username/your-repo-name/blob/main/data_cleaning_analysis.ipynb) |
+| **Machine Learning Model** | A Python project building a machine learning model to predict outcomes based on a dataset. | [View Notebook](https://github.com/your-username/your-repo-name/blob/main/machine_learning_model.ipynb) |
+| **Data Visualization** | A Python project showcasing data visualization using Matplotlib and Seaborn. | [View Notebook](https://github.com/your-username/your-repo-name/blob/main/data_visualization.ipynb) |
+
+---
+
+## **Contact Me**
+
+If you'd like to connect or discuss potential opportunities, feel free to reach out:
+- **Email**: [your-email@example.com]
+- **LinkedIn**: [Gift Ajayi](https://www.linkedin.com/in/gift-ajayi-036329ba/)
+- **Medium**: [Gift Ajayi on Medium](https://medium.com/@ajayigift.gg)
+
+---
+
+Thank you for visiting my portfolio! I look forward to hearing your feedback. 🎯
+
