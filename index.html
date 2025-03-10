@@ -7,9 +7,117 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            height: 100vh;
+            position: fixed;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a i {
+            margin-right: 10px;
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        h2 {
+            color: #6a11cb;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slide {
+            display: none;
+            animation: fade 1.5s ease-in-out;
+        }
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .caption {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        @keyframes fade {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #6a11cb;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <!-- Side Navigation Bar -->
     <div class="sidebar">
         <h2>Gift Ajayi</h2>
         <ul>
@@ -19,61 +127,155 @@
         </ul>
     </div>
     
-    <!-- Main Content -->
     <div class="main-content">
-        <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
             <p>I am a passionate data analyst with expertise in transforming raw data into actionable insights. My skills include data cleaning, exploratory data analysis (EDA), dashboard creation, and advanced analytics using Python and SQL. I enjoy solving real-world problems through data-driven decision-making.</p>
         </section>
         
-        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="slideshow-container">
-                <!-- Slide 1: Canada Weather Dashboard -->
                 <div class="slide fade">
-                    <img src="images/weather_dashboard.png" alt="Canada Weather Dashboard">
-                    <div class="caption">
-                        <h3>Canada Weather Report</h3>
-                        <p>An interactive visualization of weather trends across Canada, including temperature, precipitation, and seasonal variations.</p>
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjllOTEwNTMtM2U5My00YmVjLTgwYTktOWQ2YWNkNzQ4NTFmIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9" target="_blank">View Dashboard</a>
-                    </div>
+                    <img src="https://images.app.goo.gl/PMfvjmpAKQVPasKH9" alt="Canada Weather Dashboard">
+                    <div class="caption">Canada Weather Dashboard</div>
                 </div>
-                <!-- Slide 2: Vancouver Crime Dashboard -->
                 <div class="slide fade">
-                    <img src="images/vancouver_crime.png" alt="Vancouver Crime Dashboard">
-                    <div class="caption">
-                        <h3>Vancouver Crime and Population Dashboard</h3>
-                        <p>This dashboard explores crime trends in Vancouver alongside population data, highlighting correlations and patterns.</p>
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiN2Q0MDlmZWEtN2E1ZS00Y2JiLTkwODctNTlhMjE2MmRiZGNkIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9" target="_blank">View Dashboard</a>
-                    </div>
+                    <img src="https://your-image-url.com/vancouver_crime_dashboard.png" alt="Vancouver Crime Dashboard">
+                    <div class="caption">Vancouver Crime Dashboard</div>
                 </div>
-                <!-- Slide 3: Sales Report Dashboard -->
                 <div class="slide fade">
-                    <img src="images/sales_dashboard.png" alt="Sales Report Dashboard">
-                    <div class="caption">
-                        <h3>Sales Report</h3>
-                        <p>A comprehensive sales dashboard that tracks revenue, profit, and sales performance across different regions and product categories.</p>
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNzlmYTdhZWUtN2VjNS00ZjA1LWFiYmMtYjJiZTQzYzY5Mjc1IiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9" target="_blank">View Dashboard</a>
-                    </div>
+                    <img src="https://your-image-url.com/sales_dashboard.png" alt="Sales Report Dashboard">
+                    <div class="caption">Sales Report Dashboard</div>
                 </div>
             </div>
+
+            <h3>Power BI Dashboards</h3>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Canada Weather Report</td>
+                    <td>An interactive visualization of weather trends across Canada, including temperature, precipitation, and seasonal variations.</td>
+                    <td><img src="https://images.app.goo.gl/PMfvjmpAKQVPasKH9" alt="Canada Weather" style="width:100px;"></td>
+                    <td><a href="https://app.powerbi.com/view?r=eyJrIjoiZjllOTEwNTMtM2U5My00YmVjLTgwYTktOWQ2YWNkNzQ4NTFmIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9">View Dashboard</a></td>
+                </tr>
+                <tr>
+                    <td>Vancouver Crime and Population Dashboard</td>
+                    <td>This dashboard explores crime trends in Vancouver alongside population data, highlighting correlations and patterns.</td>
+                    <td><img src="https://your-image-url.com/vancouver_crime_dashboard.png" alt="Vancouver Crime" style="width:100px;"></td>
+                    <td><a href="https://app.powerbi.com/view?r=eyJrIjoiN2Q0MDlmZWEtN2E1ZS00Y2JiLTkwODctNTlhMjE2MmRiZGNkIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9">View Dashboard</a></td>
+                </tr>
+                <tr>
+                    <td>Sales Report</td>
+                    <td>A comprehensive sales dashboard that tracks revenue, profit, and sales performance across different regions and product categories.</td>
+                    <td><img src="https://your-image-url.com/sales_dashboard.png" alt="Sales Report" style="width:100px;"></td>
+                    <td><a href="https://app.powerbi.com/view?r=eyJrIjoiNzlmYTdhZWUtN2VjNS00ZjA1LWFiYmMtYjJiZTQzYzY5Mjc1IiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9">View Dashboard</a></td>
+                </tr>
+            </table>
+
+            <h3>Excel Projects</h3>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Vancouver Crime Analysis</td>
+                    <td>Cleaning and analyzing Vancouver crime data to identify trends and hotspots.</td>
+                    <td><img src="https://your-image-url.com/vancouver_crime_excel.png" alt="Vancouver Crime Analysis" style="width:100px;"></td>
+                    <td><a href="https://1drv.ms/x/c/c34fb1dec43df6dc/Ef89l6rpG5dKvrZeLjSdq-kBp2kwuWUZlBSmbIn6Qud5Pg?e=SSxjpj">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Sales Data Cleaning and Analysis</td>
+                    <td>Detailed analysis of sales data, including data cleaning, pivot tables, and visualization.</td>
+                    <td><img src="https://your-image-url.com/sales_data_excel.png" alt="Sales Data" style="width:100px;"></td>
+                    <td><a href="https://1drv.ms/x/c/c34fb1dec43df6dc/EWDXnHNFH7tJs8qMc_XQeT0BzL8fs569EQ8n0AZYtGJQhw?e=w4B7eG">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Airline Customer Review Data Analysis</td>
+                    <td>Analysis of airline customer reviews to identify common complaints and areas for improvement.</td>
+                    <td><img src="https://your-image-url.com/airline_reviews_excel.png" alt="Airline Reviews" style="width:100px;"></td>
+                    <td><a href="https://1drv.ms/x/c/c34fb1dec43df6dc/Ef3rVIPyzC9Ku2-CAkdVUEEB4s2q4PnYeuQ3E6E6lEH9Vg?e=Q0lGnM">View Project</a></td>
+                </tr>
+            </table>
+
+            <h3>SQL Projects</h3>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Conference Database</td>
+                    <td>A database project for managing conference data, including attendees, sessions, and schedules.</td>
+                    <td><img src="https://your-image-url.com/conference_db.png" alt="Conference DB" style="width:100px;"></td>
+                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/Conference_db(sql).ipynb">View Notebook</a></td>
+                </tr>
+                <tr>
+                    <td>Students SQL Query</td>
+                    <td>SQL queries to analyze student data, including grades, attendance, and performance.</td>
+                    <td><img src="https://your-image-url.com/students_sql.png" alt="Students SQL" style="width:100px;"></td>
+                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/Students_SQLQuery.sql">View SQL Query</a></td>
+                </tr>
+                <tr>
+                    <td>Vancouver Crime Database</td>
+                    <td>A database project analyzing crime data in Vancouver using SQL.</td>
+                    <td><img src="https://your-image-url.com/crime_db_sql.png" alt="Crime DB" style="width:100px;"></td>
+                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/Vancouver_crime_db(sql).ipynb">View Notebook</a></td>
+                </tr>
+            </table>
+
+            <h3>Python Projects</h3>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Data Cleaning and Analysis</td>
+                    <td>A Python project demonstrating data cleaning and analysis using Pandas and NumPy.</td>
+                    <td><img src="https://your-image-url.com/data_cleaning_python.png" alt="Data Cleaning" style="width:100px;"></td>
+                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/data_cleaning_analysis.ipynb">View Notebook</a></td>
+                </tr>
+                <tr>
+                    <td>Machine Learning Model</td>
+                    <td>A Python project building a machine learning model to predict outcomes based on a dataset.</td>
+                    <td><img src="https://your-image-url.com/ml_model.png" alt="Machine Learning" style="width:100px;"></td>
+                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/machine_learning_model.ipynb">View Notebook</a></td>
+                </tr>
+                <tr>
+                    <td>Data Visualization</td>
+                    <td>A Python project showcasing data visualization using Matplotlib and Seaborn.</td>
+                    <td><img src="https://your-image-url.com/data_visualization_python.png" alt="Data Visualization" style="width:100px;"></td>
+                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/data_visualization.ipynb">View Notebook</a></td>
+                </tr>
+            </table>
         </section>
         
-        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>If you'd like to connect or discuss potential opportunities, feel free to reach out:</p>
-            <ul>
-                <li><strong>Email:</strong> your-email@example.com</li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gift-ajayi-036329ba/" target="_blank">Gift Ajayi</a></li>
-                <li><strong>Medium:</strong> <a href="https://medium.com/@ajayigift.gg" target="_blank">Gift Ajayi on Medium</a></li>
-            </ul>
+            <div class="contact-info">
+                <p>If you'd like to connect or discuss potential opportunities, feel free to reach out:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gift-ajayi-036329ba/">Gift Ajayi</a></li>
+                    <li><strong>Medium:</strong> <a href="https://medium.com/@ajayigift.gg">Gift Ajayi on Medium</a></li>
+                </ul>
+            </div>
         </section>
     </div>
     
-    <!-- JavaScript for Slideshow -->
     <script>
         let slideIndex = 0;
         function showSlides() {
@@ -82,7 +284,7 @@
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+            setTimeout(showSlides, 3000);
         }
         showSlides();
     </script>
