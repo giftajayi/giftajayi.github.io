@@ -1,6 +1,7 @@
 title: "Gift Ajayi | Data Analyst Portfolio"
 description: "Showcasing my projects in Power BI, SQL, Python, and Excel."
-theme: jekyll-theme-minimal  # You can change this theme
+theme: jekyll-theme-cayman
 baseurl: ""  # Leave empty unless your site is in a subdirectory
 url: "https://your-username.github.io"
+
 
