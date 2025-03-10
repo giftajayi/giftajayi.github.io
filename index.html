@@ -52,30 +52,50 @@
         h2 {
             color: #6a11cb;
         }
-        .projects-list {
-            list-style: none;
-            padding: 0;
+        .accordion {
+            background-color: #6a11cb;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
         }
-        .projects-list li {
-            margin: 15px 0;
+        .accordion:hover {
+            background-color: #2575fc;
         }
-        .projects-list li a {
-            color: #2575fc;
-            font-size: 20px;
-            text-decoration: none;
+        .active, .accordion:hover {
+            background-color: #2575fc;
         }
-        .projects-list li a:hover {
-            text-decoration: underline;
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: #f1f1f1;
+            overflow: hidden;
         }
-        .contact-info {
-            margin-top: 20px;
+        .panel table {
+            width: 100%;
+            border-collapse: collapse;
         }
-        .contact-info a {
-            color: #2575fc;
-            text-decoration: none;
+        .panel table, th, td {
+            border: 1px solid #ddd;
         }
-        .contact-info a:hover {
-            text-decoration: underline;
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #6a11cb;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
         }
     </style>
 </head>
@@ -97,20 +117,77 @@
         
         <section id="projects">
             <h2>Projects</h2>
-            <ul class="projects-list">
-                <li><a href="canada_weather_project.html">Canada Weather Dashboard</a></li>
-                <li><a href="vancouver_crime_project.html">Vancouver Crime Dashboard</a></li>
-                <li><a href="sales_report_project.html">Sales Report Dashboard</a></li>
-                <li><a href="vancouver_crime_analysis.html">Vancouver Crime Analysis</a></li>
-                <li><a href="sales_data_analysis.html">Sales Data Cleaning and Analysis</a></li>
-                <li><a href="airline_reviews_analysis.html">Airline Customer Review Analysis</a></li>
-                <li><a href="conference_db_project.html">Conference Database</a></li>
-                <li><a href="student_sql_analysis.html">Students SQL Query Analysis</a></li>
-                <li><a href="crime_db_sql_project.html">Vancouver Crime Database (SQL)</a></li>
-                <li><a href="data_cleaning_python.html">Data Cleaning and Analysis (Python)</a></li>
-                <li><a href="machine_learning_model.html">Machine Learning Model</a></li>
-                <li><a href="data_visualization_python.html">Data Visualization (Python)</a></li>
-            </ul>
+            <button class="accordion">Power BI Dashboards</button>
+            <div class="panel">
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>Canada Weather Report</td>
+                        <td>An interactive visualization of weather trends across Canada, including temperature, precipitation, and seasonal variations.</td>
+                        <td><img src="https://images.app.goo.gl/PMfvjmpAKQVPasKH9" alt="Canada Weather" style="width:100px;"></td>
+                        <td><a href="https://app.powerbi.com/view?r=eyJrIjoiZjllOTEwNTMtM2U5My00YmVjLTgwYTktOWQ2YWNkNzQ4NTFmIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9">View Dashboard</a></td>
+                    </tr>
+                    <tr>
+                        <td>Vancouver Crime and Population Dashboard</td>
+                        <td>This dashboard explores crime trends in Vancouver alongside population data, highlighting correlations and patterns.</td>
+                        <td><img src="https://your-image-url.com/vancouver_crime_dashboard.png" alt="Vancouver Crime" style="width:100px;"></td>
+                        <td><a href="https://app.powerbi.com/view?r=eyJrIjoiN2Q0MDlmZWEtN2E1ZS00Y2JiLTkwODctNTlhMjE2MmRiZGNkIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9">View Dashboard</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sales Report</td>
+                        <td>A comprehensive sales dashboard that tracks revenue, profit, and sales performance across different regions and product categories.</td>
+                        <td><img src="https://your-image-url.com/sales_dashboard.png" alt="Sales Report" style="width:100px;"></td>
+                        <td><a href="https://app.powerbi.com/view?r=eyJrIjoiNzlmYTdhZWUtN2VjNS00ZjA1LWFiYmMtYjJiZTQzYzY5Mjc1IiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9">View Dashboard</a></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <button class="accordion">Excel Projects</button>
+            <div class="panel">
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>Vancouver Crime Analysis</td>
+                        <td>Cleaning and analyzing Vancouver crime data to identify trends and hotspots.</td>
+                        <td><img src="https://your-image-url.com/vancouver_crime_excel.png" alt="Vancouver Crime Analysis" style="width:100px;"></td>
+                        <td><a href="https://1drv.ms/x/c/c34fb1dec43df6dc/Ef89l6rpG5dKvrZeLjSdq-kBp2kwuWUZlBSmbIn6Qud5Pg?e=SSxjpj">View Project</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sales Data Cleaning and Analysis</td>
+                        <td>Detailed analysis of sales data, including data cleaning, pivot tables, and visualization.</td>
+                        <td><img src="https://your-image-url.com/sales_data_excel.png" alt="Sales Data" style="width:100px;"></td>
+                        <td><a href="https://1drv.ms/x/c/c34fb1dec43df6dc/EWDXnHNFH7tJs8qMc_XQeT0BzL8fs569EQ8n0AZYtGJQhw?e=w4B7eG">View Project</a></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <button class="accordion">SQL Projects</button>
+            <div class="panel">
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>Conference Database</td>
+                        <td>A database project for managing conference data, including attendees, sessions, and schedules.</td>
+                        <td><img src="https://your-image-url.com/conference_db.png" alt="Conference DB" style="width:100px;"></td>
+                        <td><a href="https://github.com/your-username/your-repo-name/blob/main/Conference_db(sql).ipynb">View Notebook</a></td>
+                    </tr>
+                </table>
+            </div>
         </section>
         
         <section id="contact">
@@ -125,5 +202,6 @@
             </div>
         </section>
     </div>
-</body>
-</html>
+    
+    <script>
+        // Accordion functionality
