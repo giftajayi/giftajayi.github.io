@@ -52,58 +52,20 @@
         h2 {
             color: #6a11cb;
         }
-        .slideshow-container {
-            position: relative;
-            max-width: 800px;
-            margin: auto;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        .projects-list {
+            list-style: none;
+            padding: 0;
         }
-        .slide {
-            display: none;
-            animation: fade 1.5s ease-in-out;
+        .projects-list li {
+            margin: 15px 0;
         }
-        .slide img {
-            width: 100%;
-            border-radius: 10px;
+        .projects-list li a {
+            color: #2575fc;
+            font-size: 20px;
+            text-decoration: none;
         }
-        .caption {
-            text-align: center;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-        @keyframes fade {
-            from { opacity: 0.4; }
-            to { opacity: 1; }
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #6a11cb;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
+        .projects-list li a:hover {
+            text-decoration: underline;
         }
         .contact-info {
             margin-top: 20px;
@@ -135,132 +97,20 @@
         
         <section id="projects">
             <h2>Projects</h2>
-            <div class="slideshow-container">
-                <div class="slide fade">
-                    <img src="https://images.app.goo.gl/PMfvjmpAKQVPasKH9" alt="Canada Weather Dashboard">
-                    <div class="caption">Canada Weather Dashboard</div>
-                </div>
-                <div class="slide fade">
-                    <img src="https://your-image-url.com/vancouver_crime_dashboard.png" alt="Vancouver Crime Dashboard">
-                    <div class="caption">Vancouver Crime Dashboard</div>
-                </div>
-                <div class="slide fade">
-                    <img src="https://your-image-url.com/sales_dashboard.png" alt="Sales Report Dashboard">
-                    <div class="caption">Sales Report Dashboard</div>
-                </div>
-            </div>
-
-            <h3>Power BI Dashboards</h3>
-            <table>
-                <tr>
-                    <th>Project</th>
-                    <th>Description</th>
-                    <th>Image</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>Canada Weather Report</td>
-                    <td>An interactive visualization of weather trends across Canada, including temperature, precipitation, and seasonal variations.</td>
-                    <td><img src="https://images.app.goo.gl/PMfvjmpAKQVPasKH9" alt="Canada Weather" style="width:100px;"></td>
-                    <td><a href="https://app.powerbi.com/view?r=eyJrIjoiZjllOTEwNTMtM2U5My00YmVjLTgwYTktOWQ2YWNkNzQ4NTFmIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9">View Dashboard</a></td>
-                </tr>
-                <tr>
-                    <td>Vancouver Crime and Population Dashboard</td>
-                    <td>This dashboard explores crime trends in Vancouver alongside population data, highlighting correlations and patterns.</td>
-                    <td><img src="https://your-image-url.com/vancouver_crime_dashboard.png" alt="Vancouver Crime" style="width:100px;"></td>
-                    <td><a href="https://app.powerbi.com/view?r=eyJrIjoiN2Q0MDlmZWEtN2E1ZS00Y2JiLTkwODctNTlhMjE2MmRiZGNkIiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9">View Dashboard</a></td>
-                </tr>
-                <tr>
-                    <td>Sales Report</td>
-                    <td>A comprehensive sales dashboard that tracks revenue, profit, and sales performance across different regions and product categories.</td>
-                    <td><img src="https://your-image-url.com/sales_dashboard.png" alt="Sales Report" style="width:100px;"></td>
-                    <td><a href="https://app.powerbi.com/view?r=eyJrIjoiNzlmYTdhZWUtN2VjNS00ZjA1LWFiYmMtYjJiZTQzYzY5Mjc1IiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9">View Dashboard</a></td>
-                </tr>
-            </table>
-
-            <h3>Excel Projects</h3>
-            <table>
-                <tr>
-                    <th>Project</th>
-                    <th>Description</th>
-                    <th>Image</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>Vancouver Crime Analysis</td>
-                    <td>Cleaning and analyzing Vancouver crime data to identify trends and hotspots.</td>
-                    <td><img src="https://your-image-url.com/vancouver_crime_excel.png" alt="Vancouver Crime Analysis" style="width:100px;"></td>
-                    <td><a href="https://1drv.ms/x/c/c34fb1dec43df6dc/Ef89l6rpG5dKvrZeLjSdq-kBp2kwuWUZlBSmbIn6Qud5Pg?e=SSxjpj">View Project</a></td>
-                </tr>
-                <tr>
-                    <td>Sales Data Cleaning and Analysis</td>
-                    <td>Detailed analysis of sales data, including data cleaning, pivot tables, and visualization.</td>
-                    <td><img src="https://your-image-url.com/sales_data_excel.png" alt="Sales Data" style="width:100px;"></td>
-                    <td><a href="https://1drv.ms/x/c/c34fb1dec43df6dc/EWDXnHNFH7tJs8qMc_XQeT0BzL8fs569EQ8n0AZYtGJQhw?e=w4B7eG">View Project</a></td>
-                </tr>
-                <tr>
-                    <td>Airline Customer Review Data Analysis</td>
-                    <td>Analysis of airline customer reviews to identify common complaints and areas for improvement.</td>
-                    <td><img src="https://your-image-url.com/airline_reviews_excel.png" alt="Airline Reviews" style="width:100px;"></td>
-                    <td><a href="https://1drv.ms/x/c/c34fb1dec43df6dc/Ef3rVIPyzC9Ku2-CAkdVUEEB4s2q4PnYeuQ3E6E6lEH9Vg?e=Q0lGnM">View Project</a></td>
-                </tr>
-            </table>
-
-            <h3>SQL Projects</h3>
-            <table>
-                <tr>
-                    <th>Project</th>
-                    <th>Description</th>
-                    <th>Image</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>Conference Database</td>
-                    <td>A database project for managing conference data, including attendees, sessions, and schedules.</td>
-                    <td><img src="https://your-image-url.com/conference_db.png" alt="Conference DB" style="width:100px;"></td>
-                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/Conference_db(sql).ipynb">View Notebook</a></td>
-                </tr>
-                <tr>
-                    <td>Students SQL Query</td>
-                    <td>SQL queries to analyze student data, including grades, attendance, and performance.</td>
-                    <td><img src="https://your-image-url.com/students_sql.png" alt="Students SQL" style="width:100px;"></td>
-                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/Students_SQLQuery.sql">View SQL Query</a></td>
-                </tr>
-                <tr>
-                    <td>Vancouver Crime Database</td>
-                    <td>A database project analyzing crime data in Vancouver using SQL.</td>
-                    <td><img src="https://your-image-url.com/crime_db_sql.png" alt="Crime DB" style="width:100px;"></td>
-                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/Vancouver_crime_db(sql).ipynb">View Notebook</a></td>
-                </tr>
-            </table>
-
-            <h3>Python Projects</h3>
-            <table>
-                <tr>
-                    <th>Project</th>
-                    <th>Description</th>
-                    <th>Image</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>Data Cleaning and Analysis</td>
-                    <td>A Python project demonstrating data cleaning and analysis using Pandas and NumPy.</td>
-                    <td><img src="https://your-image-url.com/data_cleaning_python.png" alt="Data Cleaning" style="width:100px;"></td>
-                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/data_cleaning_analysis.ipynb">View Notebook</a></td>
-                </tr>
-                <tr>
-                    <td>Machine Learning Model</td>
-                    <td>A Python project building a machine learning model to predict outcomes based on a dataset.</td>
-                    <td><img src="https://your-image-url.com/ml_model.png" alt="Machine Learning" style="width:100px;"></td>
-                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/machine_learning_model.ipynb">View Notebook</a></td>
-                </tr>
-                <tr>
-                    <td>Data Visualization</td>
-                    <td>A Python project showcasing data visualization using Matplotlib and Seaborn.</td>
-                    <td><img src="https://your-image-url.com/data_visualization_python.png" alt="Data Visualization" style="width:100px;"></td>
-                    <td><a href="https://github.com/your-username/your-repo-name/blob/main/data_visualization.ipynb">View Notebook</a></td>
-                </tr>
-            </table>
+            <ul class="projects-list">
+                <li><a href="canada_weather_project.html">Canada Weather Dashboard</a></li>
+                <li><a href="vancouver_crime_project.html">Vancouver Crime Dashboard</a></li>
+                <li><a href="sales_report_project.html">Sales Report Dashboard</a></li>
+                <li><a href="vancouver_crime_analysis.html">Vancouver Crime Analysis</a></li>
+                <li><a href="sales_data_analysis.html">Sales Data Cleaning and Analysis</a></li>
+                <li><a href="airline_reviews_analysis.html">Airline Customer Review Analysis</a></li>
+                <li><a href="conference_db_project.html">Conference Database</a></li>
+                <li><a href="student_sql_analysis.html">Students SQL Query Analysis</a></li>
+                <li><a href="crime_db_sql_project.html">Vancouver Crime Database (SQL)</a></li>
+                <li><a href="data_cleaning_python.html">Data Cleaning and Analysis (Python)</a></li>
+                <li><a href="machine_learning_model.html">Machine Learning Model</a></li>
+                <li><a href="data_visualization_python.html">Data Visualization (Python)</a></li>
+            </ul>
         </section>
         
         <section id="contact">
@@ -275,18 +125,5 @@
             </div>
         </section>
     </div>
-    
-    <script>
-        let slideIndex = 0;
-        function showSlides() {
-            let slides = document.querySelectorAll(".slide");
-            slides.forEach(slide => slide.style.display = "none");
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000);
-        }
-        showSlides();
-    </script>
 </body>
 </html>
