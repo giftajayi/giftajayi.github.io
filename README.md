@@ -1,6 +1,12 @@
-# Data Analyst Portfolio
+# <span style="color: #FF5733;">Data Analyst Portfolio</span>
 
-Welcome to my Data Analyst Portfolio! This website showcases my skills in data analysis, visualization, and storytelling using tools like Power BI, Excel, SQL, and Python. Below, you'll find a collection of my projects, each demonstrating my ability to clean, analyze, and present data effectively.
+Welcome to my **Data Analyst Portfolio**! This website showcases my skills in data analysis, visualization, and storytelling using tools like Power BI, Excel, SQL, and Python. Below, you'll find a collection of my projects, each demonstrating my ability to clean, analyze, and present data effectively.
+
+---
+
+## **Menu**
+- **LinkedIn**: [Gift Ajayi](https://www.linkedin.com/in/gift-ajayi-036329ba/)
+- **Medium**: [Gift Ajayi on Medium](https://medium.com/@ajayigift.gg)
 
 ---
 
@@ -80,8 +86,8 @@ Here are some of my Python projects:
 ## **Contact Me**
 If you'd like to connect or discuss potential opportunities, feel free to reach out:
 - **Email**: [your-email@example.com]
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Profile]
+- **LinkedIn**: [Gift Ajayi](https://www.linkedin.com/in/gift-ajayi-036329ba/)
+- **Medium**: [Gift Ajayi on Medium](https://medium.com/@ajayigift.gg)
 
 ---
 
