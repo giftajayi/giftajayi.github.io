@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vancouver Crime Dashboard - Gift Ajayi</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="../index.html" class="logo">← Back to Portfolio</a>
+    </header>
+
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h1>Vancouver Crime Dashboard</h1>
+          <p>Data Visualization | Crime Analytics | Urban Safety</p>
+        </header>
+
+        <!-- Crime Image -->
+        <span class="image main"><img src="../images/crime_img.png" alt="Vancouver Crime Analytics" /></span>
+
+        <!-- Power BI Link -->
+        <p style="text-align: center; margin-top: 0.5em;">
+          <strong>Link to the project:</strong><br>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiN2Q0MDlmZWEtN2E1ZS00Y2JiLTkwODctNTlhMjE2MmRiZGNk" target="_blank">
+            View Vancouver Crime Dashboard
+          </a>
+        </p>
+
+        <h2>Tools & Technologies Used</h2>
+        <ul>
+          <li><strong>Power BI:</strong> Data visualization and dashboard development</li>
+          <li><strong>Power Query (M Language):</strong> Data import, cleansing, and transformation</li>
+          <li><strong>DAX (Data Analysis Expressions):</strong> Custom measures and KPIs</li>
+          <li><strong>Excel / CSV:</strong> Source data format</li>
+          <li><strong>Basic ETL Techniques:</strong> Extract, Transform, Load processes</li>
+        </ul>
+
+        <h2>Project Overview</h2>
+        <p>This dashboard explores crime statistics across Vancouver neighborhoods. It visualizes crime frequency, trends, and hotspots, offering critical insights for urban planning, law enforcement strategies, and community awareness initiatives.</p>
+
+        <h2>Key Insights</h2>
+        <ul>
+          <li><strong>Crime Hotspot:</strong> Central Business District has the highest crime rate at 175.23 per 1,000 residents.</li>
+          <li><strong>Other High-Risk Areas:</strong> West End, Fairview, and Mount Pleasant also show elevated crime levels.</li>
+          <li><strong>Trends:</strong> Crime rates have declined steadily from 2003 to 2017 (~63% reduction).</li>
+          <li><strong>Crime-to-Population:</strong> Weak correlation (r ≈ 0.27) suggests other contributing factors.</li>
+          <li><strong>Low-Crime Zones:</strong> Arbutus Ridge and Dunbar consistently report lower rates.</li>
+        </ul>
+
+        <h2>Business Metrics</h2>
+        <ul>
+          <li>Average Crime Rate: 45.3 per 1,000 residents</li>
+          <li>Crime Rate Reduction (2003–2017): ~63%</li>
+          <li>Weak correlation between population size and crime rate (r ≈ 0.27)</li>
+        </ul>
+
+        <h2>Recommendations</h2>
+        <ul>
+          <li>Boost patrols in top 5 crime-heavy neighborhoods</li>
+          <li>Install better street lighting and surveillance in hotspots</li>
+          <li>Evaluate post-2010 policies that may have influenced the drop in crime</li>
+          <li>Review urban design of Central Business District for safety improvements</li>
+        </ul>
+
+        <h2>Data Preparation Process</h2>
+        <ol>
+          <li><strong>Data Source:</strong> Public city datasets (crime incidents, population stats)</li>
+          <li><strong>Data Cleaning:</strong> Null removal, formatting, standardizing, merging on neighborhood fields</li>
+          <li><strong>Modeling:</strong> Star schema with fact table (incidents) and dimension tables (dates, neighborhoods, types)</li>
+          <li><strong>Metrics:</strong> DAX for calculating per capita rates and rankings</li>
+        </ol>
+
+        <p><strong>Back to:</strong> <a href="../index.html">Main Portfolio</a></p>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <section class="split contact">
+        <section class="alt">
+          <h3>Location</h3>
+          <p>Edmonton, AB, Canada</p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:ajayigift.gg@gmail.com">ajayigift.gg@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Phone</h3>
+          <p>825-461-3455</p>
+        </section>
+      </section>
+    </footer>
+  </div>
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery.scrollex.min.js"></script>
+  <script src="../assets/js/jquery.scrolly.min.js"></script>
+  <script src="../assets/js/browser.min.js"></script>
+  <script src="../assets/js/breakpoints.min.js"></script>
+  <script src="../assets/js/util.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

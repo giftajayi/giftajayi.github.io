@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conference Management (SQLite) - Gift Ajayi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="../index.html" class="logo">← Back to Portfolio</a>
+    </header>
+
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h1>Conference Database Project</h1>
+          <p>SQLite Relational Database | ERD | Attendee & Session Management</p>
+        </header>
+
+        <!-- ERD Image -->
+        <span class="image main"><img src="../images/Conference_db_img(ERD).png" alt="Conference ERD" /></span>
+
+        <p style="text-align: center; margin-top: 0.5em;">
+          <strong>Project File:</strong>
+          <a href="https://github.com/giftajayi/SQL-Projects/blob/main/Conference_db(sql).ipynb" target="_blank">
+            View SQL Queries & ERD
+          </a>
+        </p>
+
+        <h2>Project Overview</h2>
+        <p>This project involves the creation of a relational database system using SQLite to manage a fictional conference. It includes defining the database schema, establishing relationships using foreign keys, inserting sample data, and executing SQL queries to derive insights. An Entity-Relationship Diagram (ERD) helps visualize the schema.</p>
+
+        <h2>Key Tables and Their Purpose</h2>
+        <ul>
+          <li><strong>Attendees:</strong> Stores information about conference participants including their name, email, and type (e.g., Student, Professional).</li>
+          <li><strong>Sessions:</strong> Contains session details such as title, description, date, and time.</li>
+          <li><strong>Speakers:</strong> Holds information about speakers and the sessions they are linked to.</li>
+          <li><strong>Registrations:</strong> Links attendees to sessions, including payment status and timestamps.</li>
+          <li><strong>Feedback:</strong> Stores post-session feedback and comments.</li>
+        </ul>
+
+        <h2>Entity Relationship Design (ERD)</h2>
+        <ul>
+          <li>One attendee can register for multiple sessions (via the <code>Registrations</code> table).</li>
+          <li>Each session can have multiple registrations and feedback entries.</li>
+          <li>Each speaker is assigned to a specific session.</li>
+          <li>Foreign key constraints ensure referential integrity across the database.</li>
+        </ul>
+
+        <h2>Sample Data Summary</h2>
+        <ul>
+          <li>20 Attendees</li>
+          <li>20 Sessions</li>
+          <li>5 Speakers</li>
+          <li>20 Registrations and Feedback records</li>
+          <li>Use of <code>PRIMARY KEY</code>, <code>NOT NULL</code>, and foreign key constraints</li>
+        </ul>
+
+        <h2>SQL Queries & Use Cases</h2>
+        <ul>
+          <li>List and filter attendees by type</li>
+          <li>Identify most attended sessions</li>
+          <li>Aggregate and analyze feedback per session</li>
+          <li>Generate personalized attendee participation reports</li>
+        </ul>
+
+        <h2>Insights & Business Metrics</h2>
+        <ul>
+          <li><strong>Top Session:</strong> Session A with 6 attendees (30% of total)</li>
+          <li><strong>Average Feedback:</strong> 1 entry per session</li>
+          <li><strong>Demographics:</strong> Professionals make up 55% of attendees</li>
+        </ul>
+
+        <h2>Recommendations</h2>
+        <ul>
+          <li>Boost promotion for low-attendance sessions</li>
+          <li>Automate post-session feedback prompts</li>
+          <li>Use popular sessions as keynotes for future conferences</li>
+        </ul>
+
+        <p><strong>Back to:</strong> <a href="../index.html">Main Portfolio</a></p>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <section class="split contact">
+        <section class="alt">
+          <h3>Location</h3>
+          <p>Edmonton, AB, Canada</p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:ajayigift.gg@gmail.com">ajayigift.gg@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Phone</h3>
+          <p>825-461-3455</p>
+        </section>
+      </section>
+    </footer>
+  </div>
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery.scrollex.min.js"></script>
+  <script src="../assets/js/jquery.scrolly.min.js

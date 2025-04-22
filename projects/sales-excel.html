@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Excel Sales Insights - Gift Ajayi</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="../index.html" class="logo">← Back to Portfolio</a>
+    </header>
+
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h1>Sales Data Analysis in Excel</h1>
+          <p>Excel | Pivot Tables | Product & Regional Sales Analysis</p>
+        </header>
+
+        <span class="image fit"><img src="../images/sales_excel_table_img.png" alt="Excel Sales Product Chart" /></span>
+
+        <p style="text-align: center; margin-top: 0.5em;">
+          <strong>View Excel File:</strong>
+          <a href="https://1drv.ms/x/c/c34fb1dec43df6dc/EWDXnHNFH7tJs8qMc_XQeT0BzL8fs569EQ8n0AZYtGJQhw?e=w4B7eG" target="_blank">
+            Open on OneDrive
+          </a>
+        </p>
+
+        <h2>Objective</h2>
+        <p>
+          The objective of this project was to analyze sales data from different product types and countries to determine which segments are driving the highest revenue. The analysis involved data cleaning, creating pivot tables, and visualizing gross sales trends by product and region.
+        </p>
+
+        <h2>Data Cleaning Process</h2>
+        <ul>
+          <li><strong>Date Formatting:</strong> Converted the Date column to Excel date format to support time-based analysis (e.g., by Month or Year).</li>
+          <li><strong>Currency Symbols Removal:</strong> Removed dollar signs ($) from numeric columns using Excel’s Find and Replace, then converted them to number format for accurate aggregation.</li>
+          <li><strong>Blank Values Handling:</strong> Filled or excluded rows with missing key values such as Product to maintain data integrity.</li>
+          <li><strong>Uniform Casing:</strong> Standardized the case of text fields (e.g., Product, Country) using Excel formulas to ensure consistency.</li>
+          <li><strong>Duplicate Removal:</strong> Identified and removed duplicate rows using conditional formatting and Excel’s built-in tools.</li>
+        </ul>
+
+        <h2>Pivot Table Insights</h2>
+
+        <h3>1. Gross Sales by Product</h3>
+        <span class="image fit"><img src="../images/Sales_excel_GS_product_img.png" alt="Gross Sales by Product" /></span>
+        <p>Paseo was the highest revenue-generating product with $36M in gross sales, far ahead of other products.</p>
+
+        <h3>2. Gross Sales by Country</h3>
+        <span class="image fit"><img src="../images/Sales_excel_GS_country_img.png" alt="Gross Sales by Country" /></span>
+        <p>Canada and the USA both generated $27M in gross sales, making them the top-performing markets.</p>
+
+        <h2>Business Metrics</h2>
+        <ul>
+          <li><strong>Top Product:</strong> Paseo — $36M</li>
+          <li><strong>Top Countries:</strong> Canada & USA — $27M each</li>
+        </ul>
+
+        <h2>Recommendations</h2>
+        <ul>
+          <li>Boost marketing and distribution for Paseo, especially in Canada and the USA.</li>
+          <li>Reposition or bundle underperforming products.</li>
+          <li>Explore localized campaigns for underperforming countries.</li>
+          <li>Automate reporting with Power Query for scalability.</li>
+        </ul>
+
+        <p><strong>Back to:</strong> <a href="../index.html">Main Portfolio</a></p>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <section class="split contact">
+        <section class="alt">
+          <h3>Location</h3>
+          <p>Edmonton, AB, Canada</p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:ajayigift.gg@gmail.com">ajayigift.gg@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Phone</h3>
+          <p>825-461-3455</p>
+        </section>
+      </section>
+    </footer>
+  </div>
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery.scrollex.min.js"></script>
+  <script src="../assets/js/jquery.scrolly.min.js"></script>
+  <script src="../assets/js/browser.min.js"></script>
+  <script src="../assets/js/breakpoints.min.js"></script>
+  <script src="../assets/js/util.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

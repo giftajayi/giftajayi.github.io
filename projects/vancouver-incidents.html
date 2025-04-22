@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vancouver Crime Trends (Excel) - Gift Ajayi</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <style>
+    .post img {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1.5rem auto;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="../index.html" class="logo">← Back to Portfolio</a>
+    </header>
+
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h1>Vancouver Incident Data Analysis in Excel</h1>
+        </header>
+
+        <h2>Objective</h2>
+        <p>
+          The objective of this project was to analyze public safety incident data in Vancouver to identify trends in crime types, neighborhood patterns, and temporal patterns (e.g., by month and weekday). The analysis involved data cleaning, the creation of pivot tables, and visualizations to gain insight into the distribution and frequency of incidents across the city.
+        </p>
+
+        <h2>Data Cleaning Process</h2>
+        <h3>Before</h3>
+        <img src="../images/Vancouver_excel_before_cleaning_img.png" alt="Before Cleaning">
+
+        <h3>After</h3>
+        <img src="../images/Vancouver_excel_img.png" alt="After Cleaning">
+
+        <ul>
+          <li><strong>Unnecessary Columns Removed:</strong> Geolocation (Latitude, Longitude), redundant IDs, and other unused fields were removed.</li>
+          <li><strong>Date and Time Formatting:</strong> Reformatted into Excel’s standard formats to enable grouping by month and weekday.</li>
+          <li><strong>Blank Values Handling:</strong> Filled or excluded rows with missing key info like Type or Neighbourhood.</li>
+          <li><strong>Standardized Text Fields:</strong> Applied PROPER() to prevent duplicate category issues.</li>
+          <li><strong>Duplicate Entries Check:</strong> Used Excel’s Remove Duplicates to avoid double-counting.</li>
+        </ul>
+
+        <h2>Pivot Table Analysis</h2>
+
+        <h3>Crime Rate by Year</h3>
+        <img src="../images/vancouver_excel_pivot5_img.png" alt="Crime Rate by Year">
+        <p>
+          From 2003 to 2011, crime declined consistently, followed by a rise between 2012 and 2016, and then a sharp drop in 2017, possibly due to missing data.
+        </p>
+
+        <h3>Top 5 Neighbourhoods by Crimes</h3>
+        <img src="../images/vancouver_excel_pivot4_img.png" alt="Top 5 Neighbourhoods">
+        <p>
+          The Central Business District reports the highest crime, followed by Fairview, Grandview-Woodland, Mount Pleasant, and the West End. These areas experience high property crime levels.
+        </p>
+
+        <h3>Neighbourhood by Number of Crimes</h3>
+        <img src="../images/vancouver_excel_pivot2_img.png" alt="Crime by Neighbourhood">
+        <p>
+          Crime is concentrated in specific neighborhoods, especially the Central Business District. After the top 5, incidents drop significantly.
+        </p>
+
+        <h3>Crimes by Time of Day</h3>
+        <img src="../images/vancouver_excel_pivot3_img.png" alt="Crime by Time of Day">
+        <p>
+          Evening is the riskiest period for crimes, particularly theft and mischief. Mornings show the least incidents.
+        </p>
+
+        <h3>Crime Type Distribution</h3>
+        <img src="../images/vancouver_excel_pivot1_img.png" alt="Crime Type Distribution">
+        <p>
+          Theft from vehicles is the most common crime, followed by mischief and break-ins. Violent crimes remain rare.
+        </p>
+
+        <h2>Business Metrics & Insights</h2>
+        <ul>
+          <li><strong>Year-over-Year Crime Trends:</strong> Decline from 2003 to 2011, increase from 2012–2016, sharp drop in 2017.</li>
+          <li><strong>High-Crime Neighborhoods:</strong> Central Business District, Fairview, Grandview-Woodland are hotspots.</li>
+          <li><strong>Crime Time Analysis:</strong> Most crimes occur in the evening, followed by afternoons and nights.</li>
+          <li><strong>Type of Crime:</strong> Property crimes dominate; violent crimes are minimal.</li>
+        </ul>
+
+        <h2>Recommendations</h2>
+        <ul>
+          <li>Increase patrols in high-crime areas during evening hours.</li>
+          <li>Launch neighborhood-specific “Crime Watch” initiatives.</li>
+          <li>Use data insights for better urban planning: lighting, cameras, zoning.</li>
+          <li>Run theft-prevention campaigns, especially for vehicles.</li>
+        </ul>
+
+        <p>
+          <a href="https://onedrive.live.com/personal/c34fb1dec43df6dc/_layouts/15/Doc.aspx?sourcedoc=%7Baa973dff-1be9-4a97-beb6-5e2e349dabe9%7D&action=default&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9jMzRmYjFkZWM0M2RmNmRjL0VmODlsNnJwRzVkS3ZyWmVMalNkcS1rQnAya3d1V1VabEJTbWJJbjZRdWQ1UGc_ZT1TU3hqcGo&slrid=6cd296a1-00e0-8000-cc71-cf8a752424ad&originalPath=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9jMzRmYjFkZWM0M2RmNmRjL0VmODlsNnJwRzVkS3ZyWmVMalNkcS1rQnAya3d1V1VabEJTbWJJbjZRdWQ1UGc_cnRpbWU9RG1ERHdEZUIzVWc&CID=f65c04bf-f602-4ab5-8b31-3c5a8669eb02&_SRM=0:G:98" target="_blank"><strong>Click here to view the Excel Sheet</strong></a>
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

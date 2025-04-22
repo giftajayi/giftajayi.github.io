@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Time Series Sales Data Analysis - Gift Ajayi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="../index.html" class="logo">← Back to Portfolio</a>
+    </header>
+
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h1>Time Series Sales Data Analysis & Visualization</h1>
+          <p>Retail & Sales Analytics | Power BI Dashboard | Campaign Profitability</p>
+        </header>
+
+        <span class="image main"><img src="../images/sales.img.png" alt="Sales Dashboard" /></span>
+
+        <p style="text-align: center; margin-top: 0.5em;">
+          <strong>Power BI Link:</strong>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiNzlmYTdhZWUtN2VjNS00ZjA1LWFiYmMtYjJiZTQzYzY5Mjc1IiwidCI6IjE3MjhiMjgzLTlhYWItNDhiNi04YjAwLTI2OTQxYTI5MzkxMCJ9" target="_blank">
+            View Dashboard
+          </a>
+        </p>
+
+        <h2>Project Overview</h2>
+        <p>This dashboard delivers a comprehensive analysis of sales performance across time, location, and marketing campaigns. It offers strategic insights into profitability trends, top-selling regions, and product-level pricing. The report is designed to assist sales managers, marketing analysts, and decision-makers in identifying high-performing periods, locations, and products to drive targeted actions.</p>
+
+        <h2>Key Insights</h2>
+        <ul>
+          <li><strong>Most Profitable Year:</strong> 2014 recorded the highest total profit, indicating strong sales momentum and effective strategies during that period.</li>
+          <li><strong>Most Profitable Day:</strong> Wednesday emerged as the top day for profit generation, ideal for midweek marketing pushes.</li>
+          <li><strong>Top-Performing City:</strong> San Antonio, TX was the most profitable city, suggesting strong demand or effective operations.</li>
+          <li><strong>Profit by Campaign & Region:</strong> Central region campaigns, especially with IDs below 10, consistently outperformed others.</li>
+          <li><strong>Sales Profit by State:</strong> Texas, California, and Florida were top contributors, as seen in a treemap visualization.</li>
+          <li><strong>Product-Level Analysis:</strong> Includes metrics like Unit Cost and Unit Price for margin analysis and product profitability insights.</li>
+        </ul>
+
+        <h2>Business Metrics</h2>
+        <ul>
+          <li><strong>Total Profit Analyzed:</strong> $8.4M</li>
+          <li><strong>Top Campaign ROI:</strong> 38% in Campaign ID 8</li>
+          <li><strong>Avg. Unit Profit Margin:</strong> 21.6%</li>
+          <li><strong>Highest Profit Category:</strong> Electronics – avg. $187.5 profit per unit</li>
+        </ul>
+
+        <h2>Recommendations</h2>
+        <ul>
+          <li>Focus midweek marketing efforts on Wednesdays to capitalize on peak profit trends.</li>
+          <li>Replicate early Central region campaign strategies in underperforming areas.</li>
+          <li>Reallocate inventory from low-margin to high-profit states like TX, CA, and FL.</li>
+          <li>Upsell products in high-margin categories like Electronics and Home Appliances.</li>
+        </ul>
+
+        <h2>Tools & Process</h2>
+        <h3>Data Import & Structure</h3>
+        <ul>
+          <li>Sales data imported from structured Excel/CSV files.</li>
+          <li>Fields included: Year, Quarter, Campaign ID, Region, State, City, Product ID, Unit Cost, Unit Price, and Sales Profit.</li>
+        </ul>
+
+        <h3>Data Transformation (Power Query)</h3>
+        <ul>
+          <li>Converted dates to fiscal quarters/years, flagged nulls, formatted currency & percentages.</li>
+          <li>Unpivoted and filtered data to enable time-series analysis.</li>
+        </ul>
+
+        <h3>Data Modeling</h3>
+        <ul>
+          <li>Fact Table: Sales transactions by product & region</li>
+          <li>Dimension Tables: Products, Dates, Locations, Campaigns</li>
+          <li>Built star schema for slicer interactivity and optimized performance.</li>
+        </ul>
+
+        <h3>DAX Measures</h3>
+        <ul>
+          <li>Used MAXX, SUMMARIZE, TOPN for KPI generation.</li>
+          <li>CALCULATE + RANKX for profitability rankings by day/year.</li>
+          <li>IF() and SWITCH() for contextual metric highlighting.</li>
+          <li>RANKX() to dynamically rank profits by campaign, region, and state.</li>
+        </ul>
+
+        <p><strong>Back to:</strong> <a href="../index.html">Main Portfolio</a></p>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <section class="split contact">
+        <section class="alt">
+          <h3>Location</h3>
+          <p>Edmonton, AB, Canada</p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:ajayigift.gg@gmail.com">ajayigift.gg@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Phone</h3>
+          <p>825-461-3455</p>
+        </section>
+      </section>
+    </footer>
+  </div>
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery.scrollex.min.js"></script>
+  <script src="../assets/js/jquery.scrolly.min.js"></script>
+  <script src="../assets/js/browser.min.js"></script>
+  <script src="../assets/js/breakpoints.min.js"></script>
+  <script src="../assets/js/util.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

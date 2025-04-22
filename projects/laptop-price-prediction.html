@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Laptop Price Prediction - Gift Ajayi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="../index.html" class="logo">← Back to Portfolio</a>
+    </header>
+
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h1>Laptop Price Prediction</h1>
+          <p>Machine Learning | Regression | EDA | Feature Engineering</p>
+        </header>
+
+        <span class="image main"><img src="../images/laptop_price_1_img.png" alt="Laptop Price Prediction" /></span>
+
+        <p style="text-align: center; margin-top: 0.5em;">
+          <strong>Project File:</strong>
+          <a href="https://github.com/giftajayi/Machine-Learning-Projects/blob/main/Laptop_Price_Prediction.ipynb" target="_blank">
+            View on GitHub
+          </a>
+        </p>
+
+        <h2>Project Overview</h2>
+        <p>
+          This machine learning project aims to <strong>predict laptop prices</strong> based on various technical specifications. The dataset includes features such as RAM, CPU, GPU, weight, screen size, and operating system. The ultimate goal is to assist consumers or businesses in estimating appropriate pricing for laptops based on their configurations.
+        </p>
+
+        <h2>Tools & Technologies Used</h2>
+        <ul>
+          <li>Python (Pandas, NumPy): Data preprocessing and feature engineering</li>
+          <li>Matplotlib & Seaborn: Exploratory Data Analysis (EDA) and visualization</li>
+          <li>Scikit-learn: Model training and evaluation</li>
+          <li>Jupyter Notebook: Development environment</li>
+          <li>GitHub: Version control and project hosting</li>
+        </ul>
+
+        <h2>Key Insights</h2>
+        <ul>
+          <li><strong>Categorical Encoding:</strong> Applied Label Encoding to categorical columns such as brand and operating system to make the data suitable for modeling.</li>
+          <li><strong>Feature Importance:</strong> Identified that RAM size, GPU type, and screen resolution were among the most important features influencing laptop price.</li>
+          <li><strong>Data Cleaning:</strong> Standardized units (e.g., removing "GB" from RAM/Storage and "kg" from weight) and handled missing values.</li>
+          <li><strong>Correlation Discovery:</strong> Found strong relationships between technical specifications and price using correlation matrices and scatter plots.</li>
+        </ul>
+
+        <h2>Business Metrics</h2>
+        <ul>
+          <li><strong>R² Score:</strong> Approximately 85% (showing strong predictive performance)</li>
+          <li><strong>Top Features Influencing Price:</strong>
+            <ol>
+              <li>RAM</li>
+              <li>GPU</li>
+              <li>Screen Resolution</li>
+            </ol>
+          </li>
+        </ul>
+
+        <h2>Recommendations</h2>
+        <ul>
+          <li><strong>Retail Integration:</strong> Integrate the model into online stores to dynamically suggest prices for laptops based on specs.</li>
+          <li><strong>Consumer Tools:</strong> Provide users with estimated laptop resale values based on their device’s configuration.</li>
+          <li><strong>Manufacturing Insights:</strong> Help manufacturers understand which specifications have the most pricing impact when designing new models.</li>
+        </ul>
+
+        <h2>Data Preparation Process</h2>
+
+        <h3>1. Data Cleaning and Preprocessing</h3>
+        <span class="image main"><img src="../images/laptop_price_3_img.png" alt="Laptop Price Prediction" /></span>
+
+        <ul>
+          <li>Removed missing or null values</li>
+          <li>Cleaned text fields (e.g., removed "GB", "kg")</li>
+          <li>Filtered out extreme outlier prices</li>
+        </ul>
+
+        <h3>2. Feature Engineering</h3>
+        
+        <ul>
+          <li>Applied Label Encoding to categorical columns</li>
+          <li>Extracted and standardized numerical fields</li>
+        </ul>
+
+        <h3>3. EDA & Visualization</h3>
+        <span class="image main"><img src="../images/laptop_price_2_img.png" alt="Laptop Price Prediction" /></span>
+
+        <ul>
+          <li>Visualized feature distributions and relationships using boxplots, histograms, and heatmaps</li>
+          <li>Analyzed which features most strongly influence price</li>
+        </ul>
+
+        <h3>4. Model Training & Evaluation</h3>
+        <ul>
+          <li>Split data into features (X) and target (y)</li>
+          <li>Used <code>RandomForestRegressor</code> for training the model</li>
+          <li>Evaluated performance using Mean Squared Error and R² Score</li>
+        </ul>
+
+        <h2>Project Summary</h2>
+        <p>
+          Built a Random Forest Regression model to predict laptop prices based on technical specifications such as RAM, GPU, screen size, and weight. Achieved an R² score of ~85%, demonstrating strong model accuracy for predicting laptop prices.
+        </p>
+
+      </section>
+    </div>
+  </div>
+</body>
+</html>

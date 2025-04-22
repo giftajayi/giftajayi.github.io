@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NorQuest ML Database — Student & Grade Tracking (SQLite) - Gift Ajayi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="../index.html" class="logo">← Back to Portfolio</a>
+    </header>
+
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h1>NorQuest Student Database — SQLite</h1>
+          <p>Student & Grade Tracking | Academic Insights | SQL</p>
+        </header>
+
+        <!-- Main visual -->
+        <span class="image main">
+          <img src="../images/student_tracking_1_img.jpg" alt="Student Grades Management" />
+        </span>
+
+        <!-- Optional schema/ERD visualization -->
+        <!-- <span class="image main">
+          <img src="../images/student_grades_erd.png" alt="ERD Schema for Student Grades" />
+        </span> -->
+
+        <p style="text-align: center; margin-top: 0.5em;">
+          <strong>Project File:</strong>
+          <a href="https://github.com/giftajayi/SQL-Projects/blob/main/Students_SQLQuery.sql" target="_blank">
+            View SQL Queries
+          </a>
+        </p>
+
+        <h2>Project Overview</h2>
+        <p>This project presents a relational database system developed with SQLite to manage and analyze student information and academic performance within a hypothetical set of students in the NorQuest College machine learning program. The system supports operations such as updating records, retrieving filtered data, and performing performance-based aggregations.</p>
+        <p>The database facilitates administrative insights such as tracking Moodle access, analyzing performance trends, and filtering by enrollment dates.</p>
+
+        <h2>Key Tables and Their Purpose</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Table</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Students</strong></td>
+              <td>Stores details about each student including their name, course enrollment, Moodle access status, date of registration, and notes.</td>
+            </tr>
+            <tr>
+              <td><strong>Grades</strong></td>
+              <td>Contains grade information for various ML-related courses, linked to students using foreign keys.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Entity Relationship Design (ERD)</h2>
+        <ul>
+          <li>One-to-many relationship: A student can have multiple grades.</li>
+          <li>Grades include course name, score, and reference to student ID.</li>
+          <li><code>Grades.student_id</code> is a foreign key referencing <code>Students.student_id</code>.</li>
+        </ul>
+
+        <h2>Data Initialization</h2>
+        <ul>
+          <li>20 student records created</li>
+          <li>30+ course grades logged</li>
+          <li>Included fields: moodle_access, course, score, registration_date, and notes</li>
+          <li>Constraints applied: <code>NOT NULL</code>, <code>PRIMARY KEY</code>, <code>FOREIGN KEY</code></li>
+        </ul>
+
+        <h2>Key SQL Queries</h2>
+        <ul>
+          <li>Update Moodle access for repeat students</li>
+          <li>Filter students by course and enrollment date</li>
+          <li>Aggregate performance: average, max, and min scores by course</li>
+          <li>Count how many students passed (grades > 60%)</li>
+        </ul>
+
+        <h2>Business Insights</h2>
+        <ul>
+          <li>35% of students scored over 80% in 3 or more courses</li>
+          <li>25% scored below 60% in at least one course</li>
+          <li>90% maintained Moodle access throughout the term</li>
+        </ul>
+
+        <h2>Recommendations</h2>
+        <ul>
+          <li>Initiate support programs for students below the pass threshold</li>
+          <li>Provide mentorship for repeaters and low-performers</li>
+          <li>Normalize course and grade data for future dashboarding</li>
+        </ul>
+
+        <p><strong>Back to:</strong> <a href="../index.html">Main Portfolio</a></p>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <section class="split contact">
+        <section class="alt">
+          <h3>Location</h3>
+          <p>Edmonton, AB, Canada</p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:ajayigift.gg@gmail.com">ajayigift.gg@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Phone</h3>
+          <p>825-461-3455</p>
+        </section>
+      </section>
+    </footer>
+  </div>
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery.scrollex.min.js"></script>
+  <script src="../assets/js/jquery.scrolly.min.js"></script>
+  <script src="../assets/js/browser.min.js"></script>
+  <script src="../assets/js/breakpoints.min.js"></script>
+  <script src="../assets/js/util.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

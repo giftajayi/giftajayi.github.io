@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Data Correlation Analysis - Gift Ajayi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="../index.html" class="logo">← Back to Portfolio</a>
+    </header>
+
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h1>Movie Data Correlation Analysis</h1>
+          <p>Python | EDA | Correlation | Visualization</p>
+        </header>
+
+        <span class="image main"><img src="../images/movies_main_1_img.png" alt="Movie Correlation Analysis" /></span>
+
+        <p style="text-align: center; margin-top: 0.5em;">
+          <strong>Project File:</strong>
+          <a href="https://github.com/giftajayi/Python-Data-Analytics/blob/main/Movies_DA.ipynb" target="_blank">
+            View on GitHub
+          </a>
+        </p>
+
+        <h2>Project Overview</h2>
+        <p>
+          This project analyzes the correlation between various features of movies, such as budget, gross revenue, and user votes. The goal is to uncover statistical relationships that can inform future predictive models or investment strategies in the film industry.
+        </p>
+
+        <h2>Tools & Technologies Used</h2>
+        <ul>
+          <li>Python (Pandas, NumPy): Data wrangling and correlation computation</li>
+          <li>Seaborn & Matplotlib: Visualization of scatter plots and heatmaps</li>
+          <li>Jupyter Notebook: Interactive analysis and report building</li>
+          <li>CSV Files: Source format for movie data</li>
+          <li>Basic EDA Techniques: Exploration of numeric relationships and trends</li>
+        </ul>
+
+        <h2>Key Insights</h2>
+
+        <span class="image main"><img src="../images/movies_main_2_img.png" alt="Movie Correlation Analysis" /></span>
+
+        <ul>
+          <li><strong>Budget ↔ Gross Correlation:</strong> Strong correlation (r = 0.7402)</li>
+          <li><strong>Votes ↔ Gross Correlation:</strong> Moderate correlation (r = 0.6148)</li>
+          <li>Higher budgets often translate to higher box office performance</li>
+          <li>User votes are a useful proxy for popularity and correlate with revenue</li>
+        </ul>
+
+        <h2>Business Metrics</h2>
+        <ul>
+          <li><strong>Top Correlation:</strong> Budget ↔ Gross (r ≈ 0.74)</li>
+          <li><strong>Moderate Correlation:</strong> Votes ↔ Gross (r ≈ 0.61)</li>
+          <li><strong>Use Case:</strong> Useful for early-stage investment or marketing planning</li>
+        </ul>
+
+        <h2>Recommendations</h2>
+        <ul>
+          <li><strong>Budget Allocation:</strong> Allocate more funding to projects with strong marketing and wide audience appeal</li>
+          <li><strong>Marketing Strategy:</strong> Encourage early engagement and review activity to increase vote count</li>
+          <li><strong>Model Integration:</strong> Use these features in revenue prediction models to assist producers and distributors</li>
+        </ul>
+
+        <h2>Data Preparation Process</h2>
+
+        <h3>1. Data Collection & Import</h3>
+        <ul>
+          <li>Loaded movie data from CSV into a Pandas DataFrame</li>
+          <li>Included columns: budget, gross revenue, vote, etc.</li>
+        </ul>
+
+        <h3>2. Data Cleaning & Transformation</h3>
+        <ul>
+          <li>Removed missing values and non-numeric entries</li>
+          <li>Ensured correct data types for correlation analysis</li>
+        </ul>
+
+        <h3>3. Correlation Analysis</h3>
+        <ul>
+          <li>Computed Pearson correlation coefficients using <code>.corr()</code></li>
+          <li>Visualized correlation matrix with Seaborn heatmap</li>
+          <li>Identified strong positive relationships among numeric columns</li>
+        </ul>
+
+        <h2>Project Summary</h2>
+        <p>
+          Conducted a data-driven correlation study on movie features. Discovered that budget and vote count are both positively correlated with box office gross, offering valuable insights for predictive modeling and strategic planning in film production and distribution.
+        </p>
+
+      </section>
+    </div>
+  </div>
+</body>
+</html>
